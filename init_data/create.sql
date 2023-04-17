@@ -1,0 +1,7 @@
+CREATE TABLE reviews (
+  id SERIAL PRIMARY KEY,
+  recipe TEXT NOT NULL,
+  review TEXT NOT NULL,
+  review_date TIMESTAMP NOT NULL DEFAULT NOW()
+  
+);

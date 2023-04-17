@@ -1,0 +1,31 @@
+<%- include('../partials/header') %>
+    <%- include('../partials/menu') %>
+
+
+<h1> REview addded</h1>
+<%-JSON.stringify(data)%>
+
+<table style="background-color: beige;"class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Recipe</th>
+        <th scope="col">Review</th>
+        <th scope="col">Date</th>
+      </tr>
+    </thead>
+    <tbody>
+        <%data.forEach(x=> {%>
+      <tr>
+        <th scope="row"><%-x.id%></th>
+        <td><%-x.recipe%></td>
+        <td><%-x.review%></td>
+        <td><%-x.review_date.toLocaleString();%></td>
+      </tr>
+
+      <%})%>
+      
+    </tbody>
+  </table>
+
+<%- include('../partials/footer') %>

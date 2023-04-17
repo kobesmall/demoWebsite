@@ -1,0 +1,1 @@
+INSERT INTO reviews (recipe,review) VALUES ('Corba','good eats');
